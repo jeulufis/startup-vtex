@@ -1,0 +1,81 @@
+---
+import { Image } from "astro:assets";
+import imgLogo from "../../public/logo.png";
+---
+
+<header class="text-4xl bg-white py-5 md:py-6">
+  <nav class="w-9/12 m-auto flex justify-between items-center">
+    <div><Image src={imgLogo} alt="logo" height={70} /></div>
+    <ul class="hidden md:flex gap-7 text-lg">
+      <li class="font-extrabold cursor-pointer hover:text-gray-600">Inicio</li>
+      <li class="cursor-pointer hover:text-gray-600">Nosotros</li>
+      <li class="cursor-pointer hover:text-gray-600">Servicios</li>
+      <li class="cursor-pointer hover:text-gray-600">Herramientas</li>
+      <li class="cursor-pointer hover:text-gray-600">Blog</li>
+      <li class="cursor-pointer hover:text-gray-600">Contacto</li>
+    </ul>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      id="svg-open"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-10 h-10 cursor-pointer md:hidden nav-mobile"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      id="svg-close"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-10 h-10 cursor-pointer nav-mobile-close hidden md:hidden"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+  </nav>
+
+  <ul
+    class="absolute w-1/2 bg-white rounded-sm z-50 hidden flex-col gap-3 p-3 border mt-3 right-0 md:hidden transition-shadow"
+    id="mobile-activate"
+  >
+    <li class="font-extrabold cursor-pointer hover:text-gray-600">Inicio</li>
+    <li class="cursor-pointer hover:text-gray-600">Nosotros</li>
+    <li class="cursor-pointer hover:text-gray-600">Servicios</li>
+    <li class="cursor-pointer hover:text-gray-600">Herramientas</li>
+    <li class="cursor-pointer hover:text-gray-600">Blog</li>
+    <li class="cursor-pointer hover:text-gray-600">Contacto</li>
+  </ul>
+</header>
+
+<script>
+  const svgOpen = document.querySelector("#svg-open");
+  const svgClose = document.querySelector("#svg-close");
+  const mobileActivate = document.querySelector("#mobile-activate");
+
+  svgOpen.addEventListener("click", () => {
+    mobileActivate.classList.remove("hidden");
+    mobileActivate.classList.add("flex");
+
+    svgOpen.classList.add("hidden");
+    svgClose.classList.remove("hidden");
+  });
+
+  svgClose.addEventListener("click", () => {
+    mobileActivate.classList.remove("flex");
+    mobileActivate.classList.add("hidden");
+
+    svgOpen.classList.remove("hidden");
+    svgClose.classList.add("hidden");
+  });
+</script>
