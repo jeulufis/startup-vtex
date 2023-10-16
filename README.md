@@ -1,40 +1,44 @@
-# Astro Starter Kit: Basics
+# Documentación de Landing Page Vtex
 
-```sh
-npm create astro@latest -- --template basics
+Bienvenido a la documentación del desarrollo de la landing page para la startup "Vtex". En esta página encontrarás información detallada sobre la estructura del proyecto y cada una de las secciones que componen la landing page.
+El proyecto está organizado de la siguiente manera:
+
+```plaintext
+/landing-page-vtex
+  ├── public
+  ├── src/
+  │     ├── components/
+  │     │     ├── Card.astro
+  │     │     ├── Carousel.astro
+  │     │     ├── Contact.astro
+  │     │     ├── Empresa.astro
+  │     │     ├── Footer.astro
+  │     │     ├── Header.astro
+  │     │     ├── Nosotros.astro
+  │     │     ├── Services.astro
+  │     │     ├── Team.astro
+  │     ├── layouts/
+  │     │     ├── Layout.astro
+  │     ├── pages/
+  │     │     ├── index.astro
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Caracterizticas
+- Responsive Design
+- Fácil de Navegar
+- Totalmente Receptiva
+- Completa y Detallada
+- Diseño Simple y Atractivo
+- Localización
+- Rendimiento Optimizado
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Vista previa
+![screenshot (11)](https://github.com/itodev-source/startup-vtex/assets/92868937/728f7de0-707e-4ba7-a11c-5fda491cfb0e)
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
