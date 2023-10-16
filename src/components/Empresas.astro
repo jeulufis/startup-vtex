@@ -9,51 +9,48 @@ import { Image } from "astro:assets";
   <p class="text-center">
     Empresas que confian en el servicio de calidad que entregamos
   </p>
-  <div class="grid grid-cols-6 py-12 pb-20 gap-5">
+  <div class="grid grid-cols-5 py-12 pb-20 gap-5 items-center justify-center">
     <div>
       <Image
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
         alt="empresa"
+        class="shadow-sm border"
         width={150}
         height={100}
       />
     </div>
     <div>
       <Image
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
+        src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
         alt="empresa"
+        class="shadow-sm border"
         width={150}
         height={100}
       />
     </div>
     <div>
       <Image
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
+        src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"
         alt="empresa"
+        class="shadow-sm border"
         width={150}
         height={100}
       />
     </div>
     <div>
       <Image
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
         alt="empresa"
+        class="shadow-sm border"
         width={150}
         height={100}
       />
     </div>
     <div>
       <Image
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/800px-Flag_of_Uruguay.svg.png"
         alt="empresa"
-        width={150}
-        height={100}
-      />
-    </div>
-    <div>
-      <Image
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAk1BMVEXXKx////8AOabVGADrqaYAMKPcKhR2h8QAOaqIMm9zhMIANqUAJqEANaUAMaQALqMAIKAAF57Ey+RrfsAAIaAAHJ/i5vIAFZ4JPKeIl8sYQqnY3O3N0+gAKKK/x+JkeL24wN+Pnc6Aj8dGYbQnSqysttqYpNFQaLf19vvs7/cxUa5ccrsACZygq9TS2OsiR6upX4EMj5G1AAACrUlEQVR4nO3a2XLaQBBAUTQJIUHLsAkMGBvCYsAx5P+/LoDEIhotdoUHWvc82YWaKt3yoJFwxdxNteY8pgpNBJpINJFoItFEoolEE4kmEk0kmkg0kWgi0USiiUQTiSYSTSSaSDSRaCLRRPpck8ClyfVZ9gefiFKOJp1h39IkyTrPHZokk+xOkr+TJO/ZcWpVmlwa7Y5veTS5PMf6foAml7zWfqBeePGUoUnnMFB88ZSgSdCOJgpfjUvQxHuJJtoBTY7CeOKl6OLR3yR4PY40aBIbjY8jrwUXj74mfjWpdxoZh1cvpdwrq2vit2v1hMlpZNlOvvJ7ejuKuiburFv0LeYp94Xqmhi3tyj0Bsu3tA2Lvia7Dcl0mT//bFM/cTU2MUF0h5Ol30x/GKmyiTHN7NNarUcZw0qbGJv1UTtu+FmzWpsYP5ynjbZzNrRqmxjTeL85OHzKezSruImx/lDOLTI+XEvQxLh/xPUnb92ob2LC1fXYR4HvNFQ38ddibBWWvIn9kHPrzMuw/ibhjT1KgcWjuYk/uzHXzV88mpvY8w3y5nxXOCv1tfi8dBa96ub0c+7iUdzE3caHLqeecZv9+Lf8xaO4iZ1ER7a8w5OS0TrerGzzFo/iJo1oZ19rxr/7jegJ/qS89zvuYH9Yd3tRIDx8SzrM297rbXJYOvMwsUWzg/3H7lPO4tHbZL903q8fQ7u93dY27//91DZxjbPxb5x8583plvWZkp2kPCkJ7DDnyqO2iUl9nOZ6g+xJvU2+jiY0oQlNaEITgSYSTSSaSDSRaCLRRKKJRBOJJhJNJJpINJFoItFEoolEE4kmEk0kmkiVn3djH7bJr/v5+/0xVX7c0bfHVAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPhP/gFlFKOx+G3hxgAAAABJRU5ErkJggg=="
-        alt="empresa"
+        class="shadow-sm border"
         width={150}
         height={100}
       />
